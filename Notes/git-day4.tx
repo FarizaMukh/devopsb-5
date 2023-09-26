@@ -1,0 +1,110 @@
+Git Key Terms:
+
+Repository:
+It contaiins each files in your projects and stores your changes as history.
+Think of this as a folder that Git can track(follow) changes,
+updates or deletes. 
+
+Local:
+This refers to version of your project that is in your personal laptop.
+When you make changes here in the local, they are not immediately available to anyone else.
+Changes need to be comittted and pushed a remote  repository first. 
+
+Staging Environment: 
+ Before you commit all the Changes, you can decide which changes will be included in commit
+ by moving changes to staging environment.
+ Staging is like preparation tables, where you can line up 
+ your changes,get ready for finilizing them.
+
+
+Remote Repository 
+A version of your project that is on the internet or another network,
+often in the platfroms like GIthib,Gitlab,Bitbucket. 
+After comitting changes locally,commits will be pushed to remote repo. 
+
+Commit: (=Lock it) 
+Once you are satisfied with changes you have made,
+A commit is like taking A PICTUE OF ALL the changes that you have mae at the moment.(figuratevily) 
+
+steps:    Local- staging-commit-remote repo
+
+Basic commands of Git: 
+command is an order that we can execute in the terminal. 
+
+Steps
+Git init(git repo) --> git add(make changes in staging environment)--> git commit (lock/save the changes) 
+-->git push (send to local repo) 
+OR LINK the folder you wanna work on it -->EDIT->LOCK->SEND 
+Git init: 
+ (f.e: get inti "pyhton"folder to upload on Git)
+This initializes a new Git repository and begins tacking an existing directory. 
+Adds a hidden subfolder within the existing directory that houses the internal data structure
+required for  versions control.
+
+Git add:
+adds changes in the directory (folder)to the staging area
+it prepares it for thecommit. 
+syntax: git add "filename"
+'''
+git add git-day4.txt 
+We would want to add all the changes to the staging environment 
+'''
+git add -A 
+
+
+Git commit 
+Takes all the changes written in staging environment and saves them to the 
+local repository.
+You should provide a message describing what this commi is for.
+'''
+git commit -m "descriptive commit message" 
+
+Git PUSH 
+pushes commits from your local repository to a remote repository.
+For the first push to a new remote you might need to specify branch 
+as well. 
+First time:
+'''
+git push origin main
+'''
+all others
+'''
+get push 
+'''
+
+#Branching in git is an advanced topic 
+What is Token? 
+It is a string of characters that represents a specific permission or authorization.
+In git we can use a personal access token (PAT): a secure token that users generate to authenticate into their 
+github account using HTTPS protocol. 
+Get Token: Open setting , left side bottom "Devops setting" clicl Personal access tokens, 
+click on Token(classic) name it , 0 experation date , COpy token link 
+
+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   Access token 
+
+https://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@github.com/FarizaMukh/devopsb-5.git    Rep name 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
